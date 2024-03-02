@@ -4,53 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Bill</title>
-    <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" href="src/login_page/login.css">
 </head>
 <body>
-    <img src="src/img/main_bg.png" alt="main_bg" height="1440" width="1024">
-
     <header class="header">
-        <h1 class="logo nowrap">Happy Bill</h1>
-        <nav class="header__nav">
-            <ul class="header__ul">
-                <li class="to_center"><a href="#">BillBoards</a></li>
-                <li class="to_center"><a href="#">Contact</a></li>
-                <li class="to_center nowrap"><a href="#">About Us</a></li>
-                <li class="Log nowrap"><img src="src/img/profile_pic.png" alt="profile_pic" height="25" width="25" class="profile_pic"><a href="login.html">Log in</a></li>
+        <nav class="happy_client">
+            <ul class="happy_client_ul">
+                <li class="happy_client__li"><a href="index.html">Happy Bill</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="main">
-        <div class="main_content">
-            <h1 class="main__h1 nowrap">Modern BillBoards</h1>
-            <p class="main__p">The best for billboard owners, mobile advertising companies, land owners, advertisers to find <span class="nowrap">out-of-home</span> advertising resources.</p>
-            <p class="shop_now"><a href="#">Shop now</a></p>
-        </div>
+    <div class="container">
+        <div class="white-background">
+            <section class="sign">
+                <nav class="sign__nav">
+                    <ul class="tabs sign__ul">
+                        <li role="tab">
+                            <a class="is_active" id="tab1" onclick="switchTab('sign_in', 'sign_up')">
+                                <span class="nowrap">Sign In</span></a>
+                        </li>
+                        <li role="tab">
+                            <a id="tab2" onclick="switchTab('sign_up', 'sign_in')">
+                                <span class="nowrap">Sign Up</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="tabs">
+                <div class="tab_content" id="sign_in">
+                    <input name="Username" placeholder="Username" required="required" inputmode="username">
+                    <input type="Password" placeholder="Password" required="required" inputmode="password">
+                    
+                    <button>Sign In</button>
+
+                    <div class="alert alert-danger" role="alert" style="display: none;" id="errorMessage">
+                        Sorry,you did not sign in correctly
+                    </div>
+                </div>
+                
+                <div class="tab_content" id="sign_up" style="display: none;">
+                    <input name="Username" placeholder="Username" required="required" inputmode="username">
+                    <input type="Email" placeholder="Email" required="required" inputmode="email">
+                    <input type="Password" placeholder="Password" required="required" inputmode="password">
+                    
+                    <button>Sign Up</button>
+                </div>
+            </section>
+        </div>  
     </div>
 
-    <div class="footer">
-        <a href="#sales" class="footer__a nowrap"><span class="nowrap">Show more</span></a>
-        <a href="#sales" class="footer_a"></a>
-    </div>
-    
-    <div class="sales" id="sales">
-        <img class="sale" src="src/img/sales.jpg" alt="sales" width="1248" height="298">
-        
-        <h1 class="sales__h1">Sales</h1>
+    <footer class="company_name">
+        <p>&#169; 2024 Happy Bill from SDU</p>
+    </footer>
 
-        <div class="sales_images">
-            <div class="to">
-                <img src="src/img/sales_board.png" alt="sales_board" width="584" height="765">
-                <h1 class="to_h1">25%</h1>
-                <button class="to_button">Show more</button>
-            </div>  
-            <div class="fo">
-                <img src="src/img/sales_board.png" alt="sales_board" width="584" height="765">
-                <h1 class="fo_h1">50%</h1>
-                <button class="fo_button">Show more</button>
-            </div>
-        </div>
-    </div>
+    <script src="src/login_page/switch.js"></script>
+    <script src="src/login_page/signin.js"></script>
 </body>
 </html>

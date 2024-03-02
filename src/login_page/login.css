@@ -137,7 +137,7 @@ a.is_active {
   align-self: center;
   color: #ff0000;
   font-weight: bolder;
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -159,15 +159,11 @@ a.is_active {
     height: 40%;
     width: 24%;
   }
-  .button {
-    margin-top: 1rem;
-  }
   .alert {
-    margin-top: 1.2rem;
-    font-size: 13px;
+    font-size: 14px;
   }
   .company_name {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 /* XL */

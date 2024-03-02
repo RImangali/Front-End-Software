@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
+
 /* RESET */
 *,
 *::after,
@@ -31,9 +32,6 @@ html {
   background-color: whitesmoke;
   color: #5e5a5a;
   line-height: 1.5;
-}
-nav {
-  font-size: 1.1rem;
 }
 h1 {
   font-size: 65px;
@@ -122,7 +120,7 @@ a:active {
   color: whitesmoke;
 }
 .main__p {
-  padding-top: 1.5rem;
+  padding-top: 30px;
   margin-left: 3rem;
   width: 70%;
 }
@@ -131,7 +129,7 @@ a:active {
   width: 100%;
 }
 .shop_now {
-  margin: 40px 100px 0 30%;
+  margin: 50px 100px 0 30%;
   background-color: #5b5b5b;
   color: whitesmoke;
   display: flex;
@@ -179,7 +177,6 @@ a:active {
 .sales img {
   width: auto;
   height: auto;
-  border-radius: 15px;
 }
 .sales__h1 {
   width: 85%;
@@ -213,9 +210,6 @@ a:active {
   border: none;
   padding: 0.5em 2em;
   border-radius: 100vmax;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: bold;
   color: #5c5f67;
 }

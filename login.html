@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Bill</title>
+    <link rel="stylesheet" href="src/login_page/login.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="happy_client">
+            <ul class="happy_client_ul">
+                <li class="happy_client__li"><a href="index.html">Happy Bill</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="white-background">
+            <section class="sign">
+                <nav class="sign__nav">
+                    <ul class="tabs sign__ul">
+                        <li role="tab">
+                            <a class="is_active" id="tab1" onclick="switchTab('sign_in', 'sign_up')">
+                                <span class="nowrap">Sign In</span></a>
+                        </li>
+                        <li role="tab">
+                            <a id="tab2" onclick="switchTab('sign_up', 'sign_in')">
+                                <span class="nowrap">Sign Up</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="tabs">
+                <div class="tab_content" id="sign_in">
+                    <input name="Username" placeholder="Username" required="required" inputmode="username">
+                    <input type="Password" placeholder="Password" required="required" inputmode="password">
+                    
+                    <button>Sign In</button>
+
+                    <div class="alert alert-danger" role="alert" style="display: none;" id="errorMessage">
+                        Sorry,you did not sign in correctly
+                    </div>
+                </div>
+                
+                <div class="tab_content" id="sign_up" style="display: none;">
+                    <input name="Username" placeholder="Username" required="required" inputmode="username">
+                    <input type="Email" placeholder="Email" required="required" inputmode="email">
+                    <input type="Password" placeholder="Password" required="required" inputmode="password">
+                    
+                    <button>Sign Up</button>
+                </div>
+            </section>
+        </div>  
+    </div>
+
+    <footer class="company_name">
+        <p>&#169; 2024 Happy Bill from SDU</p>
+    </footer>
+
+    <script src="src/login_page/switch.js"></script>
+    <script src="src/login_page/signin.js"></script>
+</body>
+</html>

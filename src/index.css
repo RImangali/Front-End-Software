@@ -190,7 +190,6 @@ a:active {
 }
 .to,
 .fo {
-  border: 1px solid red;
   display: flex;
   flex-flow: column;
   gap: 4rem;

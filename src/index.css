@@ -183,7 +183,7 @@ a:active {
   margin-top: 4rem;
 }
 .sales_images {
-  margin-top: 2rem;
+  margin-top: 3rem;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -192,6 +192,12 @@ a:active {
 .fo {
   display: flex;
   flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.info {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -206,7 +212,7 @@ a:active {
 .to_button,
 .fo_button {
   position: absolute;
-  margin-top: 31%;
+  margin-top: 460px;
   border: none;
   padding: 0.5em 2em;
   border-radius: 100vmax;

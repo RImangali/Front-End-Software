@@ -14,10 +14,9 @@
 /* GENERAL STYLES */
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   background-size: cover;
-  background-position: left;
   background-repeat: no-repeat;
 }
 input,
@@ -27,14 +26,11 @@ textarea {
 }
 html {
   scroll-behavior: smooth;
-  font-size: clamp(1.5rem, 2vh, 2rem);
+  font-size: clamp(1rem, 1rem + 10vw, 1.5rem);
   font-family: "Jost", sans-serif;
   background-color: whitesmoke;
   color: #5e5a5a;
   line-height: 1.5;
-}
-h1 {
-  font-size: 65px;
 }
 p,
 h1 {
@@ -44,31 +40,26 @@ h1 {
   white-space: nowrap;
 }
 
-/* NAV BAR */
+/* Nav Bar */
 .header {
-  position: absolute;
-  width: 100%;
-  top: 2rem;
+  top: 0;
+  padding: 1rem 2rem 0 2rem;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  background-color: transparent;
 }
 .header__nav {
-  padding-left: 2rem;
-  width: 100%;
-}
-.header__ul {
-  list-style-type: none;
   display: flex;
+  flex: 1;
   justify-content: center;
 }
-li {
+.header__ul {
   display: flex;
-  align-items: center;
-  padding: 20px;
+  list-style-type: none;
 }
-li:last-child {
-  position: absolute;
-  right: 2rem;
+li {
+  padding: 18px;
 }
 .logo {
   font-family: "Arizonia", cursive;
@@ -76,60 +67,73 @@ li:last-child {
   color: white;
   cursor: default;
   font-weight: 500;
-  padding-left: 2rem;
 }
 a:any-link {
   color: whitesmoke;
   text-decoration: none;
 }
 a:hover,
-a:focus-visible {
+a:focus-visible,
+a:active {
   color: white;
 }
-a:active {
-  color: rgba(245, 245, 245, 0.73);
+.Log {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 18px;
+  gap: 5px;
 }
-.header__ul .Log a {
+.Log a {
   color: #4a4a4a;
 }
-.header__ul .Log a:hover,
-.header__ul .Log a:focus-visible,
-.header__ul .Log a:active {
+.Log a:hover,
+.Log a:focus-visible,
+.Log a:active {
   color: #333;
 }
-.profile_pic {
-  height: 27px;
-  width: auto;
-}
 
-/*  MAIN CONTENT */
+/*  Main Content */
+.hero-main {
+  background-image: url("/src/img/main_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100dvh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
 .main {
-  width: 100%;
-  height: auto;
-  margin-inline: auto;
-  position: absolute;
   display: flex;
   justify-content: flex-end;
-  top: 30%;
+  flex: 1;
+  width: 100%;
 }
 .main_content {
   display: flex;
   flex-flow: column;
-  align-items: flex-start;
+  justify-content: center;
   width: 50%;
+  padding-bottom: 3rem;
   color: whitesmoke;
 }
-.main__p {
-  padding-top: 30px;
-  margin-left: 3rem;
-  width: 70%;
+.main_text {
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 .main__h1 {
   font-size: 70px;
-  width: 100%;
+  margin-right: 120px;
+}
+.main__p {
+  margin: 10px 50px 50px 50px;
 }
 .shop_now {
-  margin: 50px 100px 0 30%;
+  margin-right: 120px;
   background-color: #5b5b5b;
   color: whitesmoke;
   display: flex;
@@ -142,78 +146,136 @@ a:active {
   letter-spacing: 0;
 }
 
-/* FOOTER */
-.footer {
-  position: absolute;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  bottom: 0;
-}
-.footer .footer_a {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 1024 1024'%3E%3Cpath fill='%23000' d='M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2L227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7'/%3E%3C/svg%3E");
-  color: #272727;
-  margin-top: 20px;
-}
-.footer .footer__a {
-  color: #272727;
-  font-size: larger;
-}
-.footer__a:hover,
-.footer_a:hover {
-  cursor: pointer;
-  color: #333;
-}
-
-/* SALES */
+/* Sales */
 .sales {
   display: flex;
   flex-flow: column;
-  align-items: center;
+  justify-content: flex-start;
   margin-top: 3rem;
+  padding: 0 5rem;
 }
-.sales img {
-  width: auto;
-  height: auto;
+.container {
+  background-color: #c3c0c0;
+  padding: 1rem;
+  border-radius: 15px;
 }
-.sales__h1 {
-  width: 85%;
-  margin-top: 4rem;
+.even-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
 }
-.sales_images {
-  margin-top: 3rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-.to,
-.fo {
+.even-columns > div {
   display: flex;
   flex-flow: column;
-  gap: 4rem;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sale-img {
+  margin-top: 0.5rem;
+  max-width: 100%;
+  height: auto;
+}
+.sale-p {
+  margin: 0 2rem;
+  text-align: start;
+  font-size: 0.8rem;
+}
+.sale-h1 {
+  margin: 0.5rem;
+  font-size: 1.4rem;
+}
+.sales__h1 {
+  font-size: 70px;
+  margin-top: 4rem;
+}
+
+/* Billboards for Sale */
+.sales_images {
+  margin-top: 3rem;
+}
+.s-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
 }
 .info {
+  background-image: url("/src/img/sales_board.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 760px;
+  min-width: 570px;
   display: flex;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
 }
 .to_h1,
 .fo_h1 {
-  position: absolute;
   color: #e81919;
-  font-weight: bold;
+  font-weight: bolder;
+  padding: 6rem;
+  margin-bottom: 1rem;
   font-size: 5rem;
-  margin-bottom: 4rem;
 }
+.to_button a,
 .to_button,
+.fo_button a,
 .fo_button {
-  position: absolute;
-  margin-top: 460px;
   border: none;
+  bottom: 2rem;
   padding: 0.5em 2em;
   border-radius: 100vmax;
-  font-weight: bold;
+  font-weight: 900;
   color: #5c5f67;
+}
+.to_button a:hover,
+.fo_button a:hover {
+  color: #4b4e55;
+}
+
+/* Page Footer*/
+.page-footer {
+  margin-top: 8rem;
+  padding: 2rem 5rem 4rem 5rem;
+  background-color: #70747d;
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+.even-columns {
+  padding-top: 8px;
+}
+.even-columns > div > h3 {
+  color: white;
+  cursor: default;
+}
+.customer > p {
+  width: 97%;
+  color: #c3c3c3;
+}
+.even-columns .customer,
+.even-columns .company,
+.even-columns .regions {
+  display: flex;
+  align-items: start;
+}
+.social-icons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.social-icons a{
+  border-radius: 50%;
+}
+.social-icons a:hover {
+  box-shadow: 0 1px 10px 2px #616161;
+}
+.company-name {
+  color: white;
+  background-color: #70747d;
+  font-size: 0.6rem;
+  text-align: center;
+  padding: 3rem;
 }

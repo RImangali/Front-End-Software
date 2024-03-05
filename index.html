@@ -7,103 +7,138 @@
     <link rel="stylesheet" href="src/index.css" />
   </head>
   <body>
-    <img src="src/img/main_bg.png" alt="main_bg" height="1440" width="1024" />
+    <div class="hero-main">
+      <header class="header">
+        <h1 class="logo nowrap">Happy Bill</h1>
+        <nav class="header__nav">
+          <ul class="header__ul">
+            <li class="to_center"><a href="#">BillBoards</a></li>
+            <li class="to_center"><a href="#">Contact</a></li>
+            <li class="to_center nowrap"><a href="#page-footer">About Us</a></li>
+          </ul>
+        </nav>
+        <button class="Log nowrap">
+          <img
+            src="src/img/profile_pic.png"
+            alt="profile_pic"
+            class="profile_pic"
+          /><a href="login.html">Log in</a>
+        </button>
+      </header>
 
-    <header class="header">
-      <h1 class="logo nowrap">Happy Bill</h1>
-      <nav class="header__nav">
-        <ul class="header__ul">
-          <li class="to_center"><a href="#">BillBoards</a></li>
-          <li class="to_center"><a href="#">Contact</a></li>
-          <li class="to_center nowrap"><a href="#">About Us</a></li>
-          <li class="Log nowrap">
-            <img
-              src="src/img/profile_pic.png"
-              alt="profile_pic"
-              class="profile_pic"
-            /><a href="login.html">Log in</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="main">
-      <div class="main_content">
-        <h1 class="main__h1 nowrap">Modern BillBoards</h1>
-        <p class="main__p">
-          The best for billboard owners, mobile advertising companies, land
-          owners, advertisers to find
-          <span class="nowrap">out-of-home</span> advertising resources.
-        </p>
-        <p class="shop_now"><a href="#">Shop now</a></p>
+      <div class="main" id="main">
+        <div class="main_content">
+          <div class="main_text">
+            <h1 class="main__h1 nowrap">Modern BillBoards</h1>
+            <p class="main__p">
+              The best for billboard owners, mobile advertising companies, land
+              owners, advertisers to find
+              <span class="nowrap">out-of-home</span> advertising resources.
+            </p>
+            <p class="shop_now nowrap"><a href="#">Shop now</a></p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="footer">
-      <a href="#sales" class="footer__a nowrap"
-        ><span class="nowrap">Show more</span></a
-      >
-      <a href="#sales" class="footer_a"></a>
-    </div>
-
     <div class="sales" id="sales">
-      <img
-        class="sale"
-        src="src/img/sales.jpg"
-        alt="sales"
-        width="1248"
-        height="298"
-      />
+      <div class="container">
+        <div class="even-columns">
+          <div class="sale">
+            <img
+              class="sale-img"
+              src="src/img/sales_icon.png"
+              alt="sale"
+              width="90"
+              height="90"
+            />
+            <h1 class="sale-h1">Sales</h1>
+            <p class="sale-p">
+              Every week on Friday we have discounts on all billboards
+            </p>
+          </div>
+          <div class="penalty">
+            <img
+              class="sale-img"
+              src="src/img/penalty_icon.png"
+              alt="sandwatch"
+              width="90"
+              height="90"
+            />
+            <h1 class="sale-h1">Penalty</h1>
+            <p class="sale-p">
+              The client can cancel the order before the deadline with a penalty
+              of 10% of the purchase
+            </p>
+          </div>
+          <div class="contact_us">
+            <img
+              class="sale-img"
+              src="src/img/contact_us_icon.png"
+              alt="contact"
+              width="90"
+              height="90"
+            />
+            <h1 class="sale-h1">Contact us</h1>
+            <p class="sale-p">
+              Write to us on social networks and our consultants will answer you
+            </p>
+          </div>
+        </div>
+      </div>
 
       <h1 class="sales__h1">Sales</h1>
 
       <div class="sales_images">
-        <div class="to">
+        <div class="s-images">
           <div class="info">
-            <img
-              src="src/img/sales_board.png"
-              alt="sales_board"
-              width="584"
-              height="765"
-            />
             <h1 class="to_h1">25%</h1>
-            <button class="to_button">Show more</button>
+            <button class="to_button"><a href="#main">Show more</a></button>
           </div>
           <div class="info">
-            <img
-              src="src/img/sales_board.png"
-              alt="sales_board"
-              width="584"
-              height="765"
-            />
+            <h1 class="fo_h1">50%</h1>
+            <button class="fo_button"><a href="#sales">Show more</a></button>
+          </div>
+          <div class="info">
             <h1 class="to_h1">25%</h1>
-            <button class="to_button">Show more</button>
-          </div>
-        </div>
-        <div class="fo">
-          <div class="info">
-            <img
-            src="src/img/sales_board.png"
-            alt="sales_board"
-            width="584"
-            height="765"
-          />
-          <h1 class="fo_h1">50%</h1>
-          <button class="fo_button">Show more</button>
+            <button class="to_button"><a href="#">Show more</a></button>
           </div>
           <div class="info">
-            <img
-            src="src/img/sales_board.png"
-            alt="sales_board"
-            width="584"
-            height="765"
-          />
-          <h1 class="fo_h1">50%</h1>
-          <button class="fo_button">Show more</button>
+            <h1 class="fo_h1">50%</h1>
+            <button class="fo_button"><a href="#">Show more</a></button>
           </div>
         </div>
       </div>
     </div>
-  </div>
+
+    <footer class="page-footer" id="page-footer">
+      <div class="even-columns">
+        <div class="customer">
+          <h3>Customer support</h3>
+          <p>Top Questions</p>
+          <p>Warnings</p>
+          <p>Contacts</p>
+        </div>
+
+        <div class="company">
+          <h3>The company</h3>
+        </div>
+
+        <div class="regions">
+          <h3>Regions</h3>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <a href=""><img src="src/img/instagram_icon.png" alt="instagram_icon" width="50" height="50"></a>
+        <a href=""><img src="src/img/facebook_icon.png" alt="facebook_icon" width="50" height="50"></a>
+        <a href=""><img src="src/img/telegram_icon.png" alt="telegram_icon" width="50" height="50"></a>
+      </div>
+    </footer>
+
+    <div class="company-name">
+      <p>© 2024 Happy Bill from SDU</p>
+    </div>
+
   </body>
 </html>

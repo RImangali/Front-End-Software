@@ -96,9 +96,9 @@ a:active {
 
 /*  Main Content */
 .hero-main {
-  /* background-image: url("/src/img/main_bg.png");
+  background-image: url("/src/img/main_bg.png");
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
   min-height: 100dvh;
   width: auto;
   display: flex;

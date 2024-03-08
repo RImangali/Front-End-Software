@@ -96,16 +96,16 @@ a:active {
 
 /*  Main Content */
 .hero-main {
-  background-image: url("/src/img/main_bg.png");
+  /* background-image: url("/src/img/main_bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   min-height: 100dvh;
   width: auto;
   display: flex;
   flex-direction: column;
+  background-color: rgb(65, 123, 146);
 }
 .main {
-  background-color: rgb(21, 133, 185);
   display: flex;
   justify-content: flex-end;
   flex: 1;

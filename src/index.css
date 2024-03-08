@@ -240,6 +240,8 @@ a:active {
   margin-top: 8rem;
   padding: 2rem 5rem 4rem 5rem;
   background-color: #70747d;
+}
+.footer-main-content{
   display: grid;
   grid-template-columns: 65% 35%;
 }
@@ -278,5 +280,5 @@ a:active {
   background-color: #70747d;
   font-size: 0.6rem;
   text-align: center;
-  padding: 3rem;
+  padding-top: 5rem;
 }

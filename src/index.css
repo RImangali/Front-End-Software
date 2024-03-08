@@ -103,9 +103,9 @@ a:active {
   width: auto;
   display: flex;
   flex-direction: column;
-  background-color: rgb(21, 133, 185);
 }
 .main {
+  background-color: rgb(21, 133, 185);
   display: flex;
   justify-content: flex-end;
   flex: 1;

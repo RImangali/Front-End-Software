@@ -201,7 +201,7 @@ a:active {
   gap: 3rem;
 }
 .info {
-  background-image: url("/src/img/sales_board.png");
+  background-image: url("img/sales_board.png");
   background-size: cover;
   background-position: center;
   min-height: 760px;

@@ -42,7 +42,7 @@ button {
 }
 body {
   min-height: 100vh;
-  background-image: url("/src/img/main_bg.png");
+  background-image: url("../img/main_bg.png");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;

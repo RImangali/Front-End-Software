@@ -131,7 +131,8 @@ a:active {
   margin-right: 120px;
 }
 .main__p {
-  margin: 10px 50px 50px 50px;
+  max-width: 40ch;
+  margin: 1rem 0 2.5rem 0;
 }
 .shop_now {
   margin-right: 120px;

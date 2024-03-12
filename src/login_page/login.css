@@ -60,7 +60,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
 }
 
 /* NAV BAR */
@@ -144,7 +143,6 @@ a.is_active {
 
 /* FOOTER */
 .company_name {
-  border: 1px solid red;
   width: 100%;
   position: absolute;
   color: #4a4d54;

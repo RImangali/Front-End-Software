@@ -171,14 +171,15 @@ a.is_active {
 /* XL */
 @media (max-width: 1200px) {
   .white-background {
-    width: 30%;
+    width: 40%;
+    height: 30%;
   }
 }
 /* LARGE */
 @media (max-width: 992px) {
   .white-background {
-    width: 35%;
-    padding: 10px 40px 0 40px;
+    width: 45%;
+    padding: 10px 40px 30px 40px;
   }
 }
 /* MEDIUM */
@@ -195,8 +196,8 @@ a.is_active {
   }
   .white-background {
     width: 60%;
-    height: 30%;
-    padding: 10px 20px 0 20px;
+    height: auto;
+    padding: 10px 20px 30px 20px;
   }
   button {
     margin-top: 0.6rem;
@@ -215,14 +216,15 @@ a.is_active {
     font-size: 1.5rem;
   }
 }
+/* XS */
 @media (max-width: 400px) {
   body {
     font-size: 14px;
   }
   .white-background {
-    width: 60%;
-    height: 45%;
-    padding: 10px 20px 0 20px;
+    width: 70%;
+    height: auto;
+    padding: 10px 20px 30px 20px;
   }
   button {
     margin-top: 0.6rem;

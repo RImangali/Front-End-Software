@@ -60,6 +60,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid red;
 }
 
 /* NAV BAR */
@@ -90,7 +91,7 @@ header {
   border: 1px solid #000;
   background: white;
   width: 25%;
-  height: 40%;
+  height: 45%;
   top: 30%;
   display: flex;
   flex-flow: column;
@@ -143,6 +144,7 @@ a.is_active {
 
 /* FOOTER */
 .company_name {
+  border: 1px solid red;
   width: 100%;
   position: absolute;
   color: #4a4d54;
@@ -208,6 +210,32 @@ a.is_active {
   }
   .company_name {
     font-size: smaller;
+  }
+  .happy_client__li a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+  .white-background {
+    width: 60%;
+    height: 45%;
+    padding: 10px 20px 0 20px;
+  }
+  button {
+    margin-top: 0.6rem;
+  }
+  input {
+    margin-bottom: 0.7rem;
+  }
+  .alert {
+    margin-top: 0.8rem;
+    font-size: 10px;
+  }
+  .company_name {
+    font-size: 12px;
   }
   .happy_client__li a {
     font-size: 1.5rem;

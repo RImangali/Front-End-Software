@@ -39,6 +39,11 @@ h1 {
 .nowrap {
   white-space: nowrap;
 }
+.even-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
 
 /* Nav Bar */
 .header {
@@ -143,7 +148,7 @@ a:active {
   justify-content: center;
   font-family: "Kantumruy Pro", sans-serif;
   font-size: smaller;
-  padding: 0.5em 2em;
+  padding: 0.75em 3em;
   border-radius: 100vmax;
   letter-spacing: 0;
 }
@@ -160,11 +165,6 @@ a:active {
   background-color: #c3c0c0;
   padding: 1rem;
   border-radius: 15px;
-}
-.even-columns {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
 }
 .even-columns > div {
   display: flex;
@@ -203,36 +203,39 @@ a:active {
 }
 .info {
   background-image: url("img/sales_board.png");
-  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   min-height: 760px;
   min-width: 570px;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
-.to_h1,
-.fo_h1 {
+.info-h1 {
+  position: absolute;
   color: #e81919;
   font-weight: bolder;
   padding: 6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
   font-size: 5rem;
 }
-.to_button a,
-.to_button,
-.fo_button a,
-.fo_button {
+.info-button {
+  position: absolute;
+  bottom: 4rem;
   border: none;
-  bottom: 2rem;
-  padding: 0.5em 2em;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 0.75em 2em;
+  line-height: 1;
   border-radius: 100vmax;
   font-weight: 900;
-  color: #5c5f67;
+  font-size: 1rem;
+  color: #636372;
 }
-.to_button a:hover,
-.fo_button a:hover {
+.info-button:hover {
   color: #4b4e55;
 }
 
@@ -242,7 +245,7 @@ a:active {
   padding: 2rem 5rem 4rem 5rem;
   background-color: #70747d;
 }
-.footer-main-content{
+.footer-main-content {
   display: grid;
   grid-template-columns: 65% 35%;
 }

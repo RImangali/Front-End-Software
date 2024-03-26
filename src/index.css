@@ -71,8 +71,8 @@ h1 {
   list-style-type: none;
   gap: 1.25rem;
 }
-.header__nav{
-  width: 94%
+.header__nav {
+  width: 94%;
 }
 .header__ul li:first-child {
   margin-left: auto;
@@ -81,12 +81,12 @@ h1 {
   margin-left: auto;
 }
 @media (max-width: 50em) {
-  .nav-wrapper{
+  .nav-wrapper {
     padding: 1rem;
   }
   .header__nav {
     display: none;
-    
+
     position: absolute;
     padding: 1.5rem;
     inset: 7rem 1rem auto;
@@ -282,17 +282,17 @@ a:active {
   font-size: 50px;
   margin-top: 4rem;
 }
-@media (min-width: 50em){
-  .sales{
+@media (min-width: 50em) {
+  .sales {
     padding: 0 4rem;
   }
-  .sale-p{
+  .sale-p {
     font-size: 0.8rem;
   }
-  .sale-h1{
+  .sale-h1 {
     font-size: 1.4rem;
   }
-  .sales__h1{
+  .sales__h1 {
     font-size: 70px;
   }
 }
@@ -344,19 +344,19 @@ a:active {
   color: #4b4e55;
 }
 @media (min-width: 50em) {
-  .s-images{
+  .s-images {
     gap: 3rem;
     grid-template-columns: repeat(2, 1fr);
   }
-  .info{
+  .info {
     min-height: 760px;
     max-width: 570px;
   }
-  .info-h1{
+  .info-h1 {
     margin-bottom: 4rem;
     font-size: 5rem;
   }
-  .info-button{
+  .info-button {
     font-size: 1rem;
     bottom: 4rem;
   }
@@ -379,10 +379,12 @@ a:active {
 .even-columns > div > h3 {
   color: white;
   cursor: default;
+  font-size: 1rem;
 }
 .customer > p {
   width: 97%;
   color: #c3c3c3;
+  font-size: 0.8rem;
 }
 .even-columns .customer,
 .even-columns .company,
@@ -392,23 +394,17 @@ a:active {
 }
 .social-icons {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
+  align-content: flex-start;
+  flex-wrap: wrap;
   gap: 1.5rem;
-}
-@media (min-width: 50rem) {
-  .page-footer {
-    padding: 2rem 5rem 4rem 5rem;
-  }
-  .social-icons {
-    align-items: flex-start;
-    justify-content: flex-end;
-    gap: 3rem;
-  }
+  padding-top: 0.7rem;
 }
 .social-icons a {
   border-radius: 50%;
+}
+.social-icons-png {
+  width: 40px;
+  height: 40px;
 }
 .social-icons a:hover {
   box-shadow: 0 1px 10px 2px #616161;
@@ -419,4 +415,27 @@ a:active {
   font-size: 0.6rem;
   text-align: center;
   padding-top: 5rem;
+}
+@media (min-width: 50rem) {
+  .page-footer {
+    padding: 2rem 5rem 4rem 5rem;
+  }
+  .social-icons {
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 3rem;
+  }
+  .even-columns > div > h3 {
+    font-size: 1.4rem;
+  }
+  .customer > p {
+    font-size: 1rem;
+  }
+  .company-name {
+    font-size: 0.3rem;
+  }
+  .social-icons-png {
+    width: auto;
+    height: auto;
+  }
 }

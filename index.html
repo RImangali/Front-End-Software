@@ -9,23 +9,26 @@
   <body>
     <div class="hero-main">
       <header class="header">
-        <h1 class="logo nowrap">Happy Bill</h1>
-        <nav class="header__nav">
-          <ul class="header__ul">
-            <li class="to_center"><a href="#">BillBoards</a></li>
-            <li class="to_center"><a href="#">Contact</a></li>
-            <li class="to_center nowrap">
-              <a href="#page-footer">About Us</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="Log nowrap">
-          <img
-            src="src/img/profile_pic.png"
-            alt="profile_pic"
-            class="profile_pic"
-          /><a href="login.html">Log in</a>
-        </button>
+        <div class="nav-wrapper">
+          <h1 class="logo nowrap">Happy Bill</h1>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <img class="icon-hamburger" src="/src/img/icon-hamburger-open.png" width="30px" height="30px" alt="" aria-hidden="true">
+            <img class="icon-close" src="src/img/icon-hamburger-close.png" width="20px" height="20px" alt="" aria-hidden="true">
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="header__nav" id="primary-navigation">
+            <ul class="header__ul">
+              <li><a href="#">BillBoards</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="nowrap"><a href="#page-footer">About Us</a></li>
+              <li class="Log nowrap"><img
+                src="src/img/profile_pic.png"
+                alt="profile_pic"
+                class="profile_pic"
+              /><a href="login.html">Log in</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <div class="main" id="main">
@@ -37,7 +40,7 @@
               owners, advertisers to find
               <span class="nowrap">out-of-home</span> advertising resources.
             </p>
-            <p class="shop_now nowrap"><a href="#">Shop now</a></p>
+            <p class="shop_now nowrap"><a href="login.html">Shop now</a></p>
           </div>
         </div>
       </div>
@@ -160,5 +163,7 @@
         <p>© 2024 Happy Bill from SDU</p>
       </div>
     </footer>
+
+    <script src="src/main.js"></script>
   </body>
 </html>

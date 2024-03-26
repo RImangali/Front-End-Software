@@ -42,7 +42,7 @@ h1 {
 .even-columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .visually-hidden {
   position: absolute;
@@ -202,12 +202,14 @@ a:active {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 .main__h1 {
-  font-size: 50px;
+  font-size: 35px;
 }
 .main__p {
   max-width: 30ch;
+  font-size: 0.6rem;
   margin: 1rem 0 2.5rem 0;
 }
 .shop_now {
@@ -219,6 +221,7 @@ a:active {
   font-family: "Kantumruy Pro", sans-serif;
   font-size: smaller;
   padding: 0.75em 3em;
+  font-size: 0.6rem;
   border-radius: 100vmax;
   letter-spacing: 0;
 }
@@ -227,16 +230,17 @@ a:active {
     width: 50%;
     color: whitesmoke;
   }
-
   .main__h1 {
-    font-size: 70px;
+    font-size: 65px;
     margin-right: 120px;
   }
   .main__p {
     max-width: 40ch;
+    font-size: 1rem;
   }
   .shop_now {
     margin-right: 120px;
+    font-size: 0.8rem;
   }
 }
 
@@ -246,7 +250,7 @@ a:active {
   flex-flow: column;
   justify-content: flex-start;
   margin-top: 3rem;
-  padding: 0 5rem;
+  padding: 0 1rem;
 }
 .container {
   background-color: #c3c0c0;
@@ -266,17 +270,31 @@ a:active {
   height: auto;
 }
 .sale-p {
-  margin: 0 2rem;
+  margin: 0 1rem;
   text-align: start;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
 }
 .sale-h1 {
   margin: 0.5rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .sales__h1 {
-  font-size: 70px;
+  font-size: 50px;
   margin-top: 4rem;
+}
+@media (min-width: 50em){
+  .sales{
+    padding: 0 4rem;
+  }
+  .sale-p{
+    font-size: 0.8rem;
+  }
+  .sale-h1{
+    font-size: 1.4rem;
+  }
+  .sales__h1{
+    font-size: 70px;
+  }
 }
 
 /* Billboards for Sale */
@@ -285,15 +303,16 @@ a:active {
 }
 .s-images {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
 }
 .info {
   background-image: url("img/sales_board.png");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 760px;
-  min-width: 570px;
+  min-height: 480px;
+  max-width: 450px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -304,13 +323,12 @@ a:active {
   position: absolute;
   color: #e81919;
   font-weight: bolder;
-  padding: 6rem;
-  margin-bottom: 4rem;
-  font-size: 5rem;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
 }
 .info-button {
   position: absolute;
-  bottom: 4rem;
+  bottom: 3rem;
   border: none;
   text-decoration: none;
   cursor: pointer;
@@ -319,11 +337,29 @@ a:active {
   line-height: 1;
   border-radius: 100vmax;
   font-weight: 900;
-  font-size: 1rem;
+  font-size: 0.6rem;
   color: #636372;
 }
 .info-button:hover {
   color: #4b4e55;
+}
+@media (min-width: 50em) {
+  .s-images{
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .info{
+    min-height: 760px;
+    max-width: 570px;
+  }
+  .info-h1{
+    margin-bottom: 4rem;
+    font-size: 5rem;
+  }
+  .info-button{
+    font-size: 1rem;
+    bottom: 4rem;
+  }
 }
 
 /* Page Footer*/
@@ -335,7 +371,7 @@ a:active {
 .footer-main-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .even-columns {
   padding-top: 8px;

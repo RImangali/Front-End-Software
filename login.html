@@ -43,49 +43,84 @@
             <input
               name="Username"
               placeholder="Username"
-              required="required"
+              required
               inputmode="username"
+              id="username_in"
+              value=""
             />
             <input
               type="Password"
               placeholder="Password"
-              required="required"
+              required
               inputmode="password"
+              id="password_in"
+              value=""
             />
 
-            <button class="nowrap">Sign In</button>
+            <button class="nowrap" onclick="sendRequest()" id="signin">
+              Sign In
+            </button>
 
             <div
-              class="alert alert-danger"
+              class="alert"
               role="alert"
               style="display: none"
               id="errorMessage"
             >
-              Sorry,you did not sign in correctly
+              Invalid Username or Password
             </div>
+
+            <!-- add later -->
+            <!-- <div
+              class="alert"
+              role="alert"
+              style="display: none"
+              id="emptyFields"
+            >
+              Username and Password required
+            </div> -->
           </div>
 
           <div class="tab_content" id="sign_up" style="display: none">
             <input
+              type="text"
+              placeholder="Name"
+              required
+              inputmode="password"
+              id="name_up"
+            />
+            <input
+              type="text"
+              placeholder="Surname"
+              required
+              inputmode="password"
+              id="surname_up"
+            />
+            <input
               name="Username"
               placeholder="Username"
-              required="required"
+              required
               inputmode="username"
+              id="username_up"
             />
             <input
               type="Email"
               placeholder="Email"
-              required="required"
+              required
               inputmode="email"
+              id="email_up"
             />
             <input
               type="Password"
               placeholder="Password"
-              required="required"
+              required
               inputmode="password"
+              id="password_up"
             />
 
-            <button class="nowrap">Sign Up</button>
+            <button class="nowrap" id="signup" onclick="sendRequest_up()">
+              Sign Up
+            </button>
           </div>
         </section>
       </div>
@@ -95,7 +130,9 @@
       <p>&#169; 2024 Happy Bill from SDU</p>
     </footer>
 
-    <script src="src/login_page/switch.js"></script>
     <script src="src/login_page/signin.js"></script>
+    <script src="src/login_page/switch.js"></script>
+    <script src="src/login_page/signup.js"></script>
+    <!-- <script src="src/logged.js"></script> -->
   </body>
 </html>

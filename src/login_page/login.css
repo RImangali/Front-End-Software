@@ -38,13 +38,14 @@ button {
   border: none;
   outline: none;
   margin-top: 1rem;
+  margin-bottom: 2rem;
   border-radius: 30px;
 }
 body {
   min-height: 100vh;
   background-image: url("../img/main_bg.png");
   background-size: cover;
-  background-position: left;
+  background-position: top;
   background-repeat: no-repeat;
 }
 html {
@@ -70,7 +71,7 @@ header {
 .happy_client__li a {
   color: white;
   border: none;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .happy_client__li a:hover {
   border: none;
@@ -80,7 +81,7 @@ header {
   list-style-type: none;
   justify-content: initial;
   font-family: "Arizonia";
-  padding: 2rem 0 0 2rem;
+  padding: 1.5rem 0 0 2.5rem;
 }
 
 /* MAIN */
@@ -90,12 +91,12 @@ header {
   border: 1px solid #000;
   background: white;
   width: 25%;
-  height: 45%;
+  height: auto;
   top: 30%;
   display: flex;
   flex-flow: column;
   align-content: center;
-  padding: 10px 40px 0 40px;
+  padding: 10px 20px 30px 20px;
 }
 .sign__ul {
   margin-block-start: 1.5em;
@@ -146,7 +147,7 @@ a.is_active {
   width: 100%;
   position: absolute;
   color: #4a4d54;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   bottom: 40px;
 }
@@ -156,8 +157,8 @@ a.is_active {
 /* 2XL */
 @media (min-width: 1400px) {
   .white-background {
-    height: 40%;
     width: 24%;
+    padding: 10px 30px 30px 30px;
   }
   .alert {
     font-size: 14px;
@@ -165,26 +166,25 @@ a.is_active {
   .company_name {
     font-size: 0.8rem;
   }
-}
-/* XL */
-@media (max-width: 1200px) {
-  .white-background {
-    width: 40%;
-    height: 30%;
+  .happy_client__li a {
+    font-size: 2.5rem;
   }
 }
 /* LARGE */
 @media (max-width: 992px) {
   .white-background {
     width: 45%;
-    padding: 10px 40px 30px 40px;
+    padding: 10px 30px 30px 30px;
+  }
+  .happy_client__li a {
+    font-size: 2rem;
   }
 }
 /* MEDIUM */
 @media (max-width: 768px) {
   .white-background {
     width: 40%;
-    padding: 10px 30px 0 30px;
+    padding: 10px 30px 30px 30px;
   }
 }
 /* SMALL */
@@ -195,7 +195,6 @@ a.is_active {
   .white-background {
     width: 60%;
     height: auto;
-    padding: 10px 20px 30px 20px;
   }
   button {
     margin-top: 0.6rem;
@@ -206,12 +205,6 @@ a.is_active {
   .alert {
     margin-top: 0.8rem;
     font-size: 10px;
-  }
-  .company_name {
-    font-size: smaller;
-  }
-  .happy_client__li a {
-    font-size: 1.5rem;
   }
 }
 /* XS */
@@ -222,7 +215,6 @@ a.is_active {
   .white-background {
     width: 70%;
     height: auto;
-    padding: 10px 20px 30px 20px;
   }
   button {
     margin-top: 0.6rem;
@@ -233,11 +225,5 @@ a.is_active {
   .alert {
     margin-top: 0.8rem;
     font-size: 10px;
-  }
-  .company_name {
-    font-size: 12px;
-  }
-  .happy_client__li a {
-    font-size: 1.5rem;
   }
 }

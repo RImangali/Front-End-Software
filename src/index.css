@@ -33,7 +33,7 @@ html {
   line-height: 1.5;
 }
 p,
-h1 {
+h1 {  
   cursor: default;
 }
 .nowrap {
